@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/test_version.dir/test_version.cpp.o -o test_version  /usr/local/lib/libCatch2Main.a ../libdsh_lib.a /usr/local/lib/libCatch2.a 

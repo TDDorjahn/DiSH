@@ -1,0 +1,76 @@
+Start testing: Feb 26 19:02 CST
+----------------------------------------------------------
+1/4 Testing: test_concepts
+1/4 Test: test_concepts
+Command: "/home/dillan/coding/shell/build/tests/test_concepts"
+Directory: /home/dillan/coding/shell/build/tests
+"test_concepts" start time: Feb 26 19:02 CST
+Output:
+----------------------------------------------------------
+Randomness seeded to: 1997966506
+===============================================================================
+test cases: 1 | 1 passed
+assertions: - none -
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_concepts" end time: Feb 26 19:02 CST
+"test_concepts" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/4 Testing: test_main
+2/4 Test: test_main
+Command: "/home/dillan/coding/shell/build/tests/test_main"
+Directory: /home/dillan/coding/shell/build/tests
+"test_main" start time: Feb 26 19:02 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_main" end time: Feb 26 19:02 CST
+"test_main" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/4 Testing: test_tools
+3/4 Test: test_tools
+Command: "/home/dillan/coding/shell/build/tests/test_tools"
+Directory: /home/dillan/coding/shell/build/tests
+"test_tools" start time: Feb 26 19:02 CST
+Output:
+----------------------------------------------------------
+Randomness seeded to: 4140071116
+===============================================================================
+All tests passed (50 assertions in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_tools" end time: Feb 26 19:02 CST
+"test_tools" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/4 Testing: test_version
+4/4 Test: test_version
+Command: "/home/dillan/coding/shell/build/tests/test_version"
+Directory: /home/dillan/coding/shell/build/tests
+"test_version" start time: Feb 26 19:02 CST
+Output:
+----------------------------------------------------------
+Randomness seeded to: 2234910521
+===============================================================================
+All tests passed (59 assertions in 9 test cases)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_version" end time: Feb 26 19:02 CST
+"test_version" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Feb 26 19:02 CST

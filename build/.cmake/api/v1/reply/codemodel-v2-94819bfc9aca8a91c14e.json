@@ -1,0 +1,124 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				},
+				{
+					"build" : "tests",
+					"jsonFile" : "directory-tests-Debug-b01f6abb0ab61427ef3b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "tests",
+					"targetIndexes" : 
+					[
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "DSH",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "dsh::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dsh-Debug-c7adcc0abb4b0f7e9f48.json",
+					"name" : "dsh",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dsh_lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dsh_lib-Debug-1a313ad85f2281711698.json",
+					"name" : "dsh_lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_concepts::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-test_concepts-Debug-c14ff7248a3a5ce0b953.json",
+					"name" : "test_concepts",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_main::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-test_main-Debug-f71ad177dcf9b4080bc1.json",
+					"name" : "test_main",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_tools::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-test_tools-Debug-099da6a77d277cd1dcd2.json",
+					"name" : "test_tools",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_version::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-test_version-Debug-5f7a08cdb55b86bb7d4d.json",
+					"name" : "test_version",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/dillan/coding/shell/build",
+		"source" : "/home/dillan/coding/shell"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

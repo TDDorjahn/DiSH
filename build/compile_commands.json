@@ -1,0 +1,38 @@
+[
+{
+  "directory": "/home/dillan/coding/shell/build",
+  "command": "/usr/bin/g++  -I/home/dillan/coding/shell/core/interface -I/home/dillan/coding/shell/exec/interface -I/home/dillan/coding/shell/fs/interface -I/home/dillan/coding/shell/history/interface -I/home/dillan/coding/shell/io/interface -I/home/dillan/coding/shell/parser/interface -I/home/dillan/coding/shell/signals/interface -I/home/dillan/coding/shell/usr/interface -g -std=gnu++23 -o CMakeFiles/dsh_lib.dir/usr/src/user.cpp.o -c /home/dillan/coding/shell/usr/src/user.cpp",
+  "file": "/home/dillan/coding/shell/usr/src/user.cpp",
+  "output": "CMakeFiles/dsh_lib.dir/usr/src/user.cpp.o"
+},
+{
+  "directory": "/home/dillan/coding/shell/build",
+  "command": "/usr/bin/g++  -I/home/dillan/coding/shell/core/interface -I/home/dillan/coding/shell/exec/interface -I/home/dillan/coding/shell/fs/interface -I/home/dillan/coding/shell/history/interface -I/home/dillan/coding/shell/io/interface -I/home/dillan/coding/shell/parser/interface -I/home/dillan/coding/shell/signals/interface -I/home/dillan/coding/shell/usr/interface -g -std=gnu++23 -o CMakeFiles/dsh.dir/main.cpp.o -c /home/dillan/coding/shell/main.cpp",
+  "file": "/home/dillan/coding/shell/main.cpp",
+  "output": "CMakeFiles/dsh.dir/main.cpp.o"
+},
+{
+  "directory": "/home/dillan/coding/shell/build/tests",
+  "command": "/usr/bin/g++  -I/home/dillan/coding/shell/core/interface -I/home/dillan/coding/shell/exec/interface -I/home/dillan/coding/shell/fs/interface -I/home/dillan/coding/shell/history/interface -I/home/dillan/coding/shell/io/interface -I/home/dillan/coding/shell/parser/interface -I/home/dillan/coding/shell/signals/interface -I/home/dillan/coding/shell/usr/interface -g -std=gnu++23 -o CMakeFiles/test_concepts.dir/test_concepts.cpp.o -c /home/dillan/coding/shell/tests/test_concepts.cpp",
+  "file": "/home/dillan/coding/shell/tests/test_concepts.cpp",
+  "output": "tests/CMakeFiles/test_concepts.dir/test_concepts.cpp.o"
+},
+{
+  "directory": "/home/dillan/coding/shell/build/tests",
+  "command": "/usr/bin/g++  -I/home/dillan/coding/shell/core/interface -I/home/dillan/coding/shell/exec/interface -I/home/dillan/coding/shell/fs/interface -I/home/dillan/coding/shell/history/interface -I/home/dillan/coding/shell/io/interface -I/home/dillan/coding/shell/parser/interface -I/home/dillan/coding/shell/signals/interface -I/home/dillan/coding/shell/usr/interface -g -std=gnu++23 -o CMakeFiles/test_main.dir/test_main.cpp.o -c /home/dillan/coding/shell/tests/test_main.cpp",
+  "file": "/home/dillan/coding/shell/tests/test_main.cpp",
+  "output": "tests/CMakeFiles/test_main.dir/test_main.cpp.o"
+},
+{
+  "directory": "/home/dillan/coding/shell/build/tests",
+  "command": "/usr/bin/g++  -I/home/dillan/coding/shell/core/interface -I/home/dillan/coding/shell/exec/interface -I/home/dillan/coding/shell/fs/interface -I/home/dillan/coding/shell/history/interface -I/home/dillan/coding/shell/io/interface -I/home/dillan/coding/shell/parser/interface -I/home/dillan/coding/shell/signals/interface -I/home/dillan/coding/shell/usr/interface -g -std=gnu++23 -o CMakeFiles/test_tools.dir/test_tools.cpp.o -c /home/dillan/coding/shell/tests/test_tools.cpp",
+  "file": "/home/dillan/coding/shell/tests/test_tools.cpp",
+  "output": "tests/CMakeFiles/test_tools.dir/test_tools.cpp.o"
+},
+{
+  "directory": "/home/dillan/coding/shell/build/tests",
+  "command": "/usr/bin/g++  -I/home/dillan/coding/shell/core/interface -I/home/dillan/coding/shell/exec/interface -I/home/dillan/coding/shell/fs/interface -I/home/dillan/coding/shell/history/interface -I/home/dillan/coding/shell/io/interface -I/home/dillan/coding/shell/parser/interface -I/home/dillan/coding/shell/signals/interface -I/home/dillan/coding/shell/usr/interface -g -std=gnu++23 -o CMakeFiles/test_version.dir/test_version.cpp.o -c /home/dillan/coding/shell/tests/test_version.cpp",
+  "file": "/home/dillan/coding/shell/tests/test_version.cpp",
+  "output": "tests/CMakeFiles/test_version.dir/test_version.cpp.o"
+}
+]

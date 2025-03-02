@@ -1,0 +1,12 @@
+/home/dillan/coding/shell/build/CMakeFiles/dsh_lib.dir
+/home/dillan/coding/shell/build/CMakeFiles/dsh.dir
+/home/dillan/coding/shell/build/CMakeFiles/test.dir
+/home/dillan/coding/shell/build/CMakeFiles/edit_cache.dir
+/home/dillan/coding/shell/build/CMakeFiles/rebuild_cache.dir
+/home/dillan/coding/shell/build/tests/CMakeFiles/test_concepts.dir
+/home/dillan/coding/shell/build/tests/CMakeFiles/test_main.dir
+/home/dillan/coding/shell/build/tests/CMakeFiles/test_tools.dir
+/home/dillan/coding/shell/build/tests/CMakeFiles/test_version.dir
+/home/dillan/coding/shell/build/tests/CMakeFiles/test.dir
+/home/dillan/coding/shell/build/tests/CMakeFiles/edit_cache.dir
+/home/dillan/coding/shell/build/tests/CMakeFiles/rebuild_cache.dir
