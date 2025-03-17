@@ -1,5 +1,6 @@
 #include <iterator>
 #include <ostream>
+#include <cstdint>
 
 using std::ostream;
 
@@ -216,5 +217,102 @@ using forward_iter = struct forward_it<Type>;
 
 ///@}
 ///END Group Iterator Types
+
+template <typename _char_int = std::int8_t>
+struct char_int {
+
+    _char_int value;
+
+    char_int(_char_int value) : value(value) {}
+
+    constexpr operator int() const        { return static_cast<int>(value); }
+    constexpr int get() const             { return static_cast<int>(value); }
+    constexpr operator int*()             { return static_cast<int&>(&value); }
+    constexpr operator const int*() const { return static_cast<int&>(&value); }
+
+    void* operator new(size_t size) { 
+
+        if(size == 0)
+            ++size;
+
+        if(void* ptr = malloc(size))
+            return ptr;
+
+        throw std::bad_alloc{};
+
+    }
+
+    void* operator new[](size_t size) {
+
+        if(size == 0)
+            ++size;
+
+        if(void * ptr = malloc(size))
+            return ptr;
+
+        throw std::bad_alloc{};
+
+    }
+
+    void operator delete(void* ptr) noexcept { free(ptr); }
+    void operator delete[](void* ptr) { free(ptr); }
+
+    friend ostream& operator<<(ostream& os, const char_int& v) { 
+
+        os << v.value;
+        return os;
+
+    }
+
+};
+
+template<typename _uchar_int = std::uint8_t>
+struct uchar_int {
+
+    _uchar_int value;
+
+    uchar_int(_uchar_int value) : value(value) {}
+
+    constexpr operator unsigned int() const           { return static_cast<unsigned int>(value); }
+    constexpr unsigned int get() const                { return static_cast<unsigned int>(value); }
+    constexpr operator unsigned int*() const          { return static_cast<unsigned int&>(&value); }
+    constexpr operator const unsigned int*() const    { return static_cast<unsigned int&>(&value); }
+
+    void* operator new(size_t size) {
+
+        if(size == 0)
+            ++size;
+
+        if(void* ptr = malloc(size))
+            return ptr;
+
+        throw std::bad_alloc{};
+
+    }
+
+    void* operator new[](size_t size) {
+
+        if(size == 0)
+            ++size;
+
+        if(void* ptr = malloc(size))
+            return ptr;
+
+        throw std::bad_alloc{};
+
+    }
+
+    void operator delete(void* ptr) noexcept { free(ptr); }
+    void operator delete[](void* ptr) noexcept { free(ptr); }
+
+    friend ostream& operator<<(ostream& os, const uchar_int& v) { 
+
+        os << v.value;
+        return os;
+
+    }
+
+};
+
 
 }

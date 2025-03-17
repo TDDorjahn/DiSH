@@ -184,10 +184,7 @@ namespace dsh {
             constexpr void append_range(cont container) { ptr_list.insert(ptr_list.end(), container.cbegin(), container.cend()); }
 #endif
 
-            __attribute__((noreturn, __always_inline__))
-            constexpr void clear() { cleanup(); }
-
-            __attribute__((noreturn, __always_inline__))
+            __attribute__((__always_inline__))
             constexpr void cleanup() {
 
                 for(auto& ptr : ptr_list) {
@@ -303,7 +300,7 @@ namespace dsh {
 #elif __cplusplus == 202002L
 
             void swap(pointer_list& other) noexcept
-            (std::allocator_traits<Allocator>::propagate_one_container_swap::value || std::allocator_traits<Allocator>::is_always_equal::value) {
+            (std::allocator_traits<allocator_type>::propagate_one_container_swap::value || std::allocator_traits<allocator_type>::is_always_equal::value) {
                 ptr_list.swap(other.ptr_list);
             }
 

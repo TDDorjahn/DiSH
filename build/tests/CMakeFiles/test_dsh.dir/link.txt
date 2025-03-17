@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/test_dsh.dir/test_main.cpp.o CMakeFiles/test_dsh.dir/__/core/src/test_version.cpp.o -o test_dsh  /usr/local/lib/libCatch2Main.a ../libdsh_lib.a /usr/local/lib/libCatch2.a 

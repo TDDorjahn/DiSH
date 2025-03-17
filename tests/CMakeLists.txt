@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 3.20)
 find_package(Catch2 3 REQUIRED)
 
 set(CMAKE_IGNORE_PATH "./build")
+set(CMAKE_CXX_FLAGS_DEBUG "-g -DDEBUG")
+
 set(HOME_DIR    ${CMAKE_SOURCE_DIR})
 set(CORE_DIR    ${HOME_DIR}/core)
 set(EXEC_DIR    ${HOME_DIR}/exec)

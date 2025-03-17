@@ -47,82 +47,82 @@ namespace dsh {
     using raw_c_str = c8 const *;
     using raw_c_w_str = c16 const *;
 
-    using i8 = std::int8_t;
+    using i8 =  char_int<>;
     using i16 = std::int16_t;
     using i32 = std::int32_t;
     using i64 = std::int64_t;
 
-    using ui8 = std::uint8_t;
+    using ui8 = uchar_int<>;
     using ui16 = std::uint16_t;
     using ui32 = std::uint32_t;
     using ui64 = std::uint64_t;
 
-    using i8_c = const std::int8_t;
+    using i8_c = const char_int<>;
     using i16_c = const std::int16_t;
     using i32_c = const std::int32_t;
     using i64_c = const std::int64_t;
 
-    using ui8_c = const std::uint8_t;
+    using ui8_c = const uchar_int<>;
     using ui16_c = const std::uint16_t;
     using ui32_c = const std::uint32_t;
     using ui64_c = const std::uint64_t;
 
-    using i8_r = std::int8_t&;
+    using i8_r =  char_int<>&;
     using i16_r = std::int16_t&;
     using i32_r = std::int32_t&;
     using i64_r = std::int64_t&;
 
-    using ui8_r = std::uint8_t&;
+    using ui8_r = uchar_int<>&;
     using ui16_r = std::uint16_t&;
     using ui32_r = std::uint32_t&;
     using ui64_r = std::uint64_t&;
 
-    using i8_r_c = const std::int8_t&;
+    using i8_r_c = const char_int<>&;
     using i16_r_c = const std::int16_t&;
     using i32_r_c = const std::int32_t&;
     using i64_r_c = const std::int64_t&;
 
-    using ui8_r_c = const std::uint8_t&;
+    using ui8_r_c = const uchar_int<>&;
     using ui16_r_c = const std::uint16_t&;
     using ui32_r_c = const std::uint32_t&;
     using ui64_r_c = const std::uint64_t&;
 
-    using i8_ptr = std::int8_t *;
+    using i8_ptr = char_int<> *;
     using i16_ptr = std::int16_t *;
     using i32_ptr = std::int32_t *;
     using i64_ptr = std::int64_t *;
 
-    using ui8_ptr = std::uint8_t *;
+    using ui8_ptr = uchar_int<> *;
     using ui16_ptr = std::uint16_t *;
     using ui32_ptr = std::uint32_t *;
     using ui64_ptr = std::uint64_t *;
 
-    using i8_ptr_c = const std::int8_t *;
+    using i8_ptr_c = const char_int<> *;
     using i16_ptr_c = const std::int16_t *;
     using i32_ptr_c = const std::int32_t *;
     using i64_ptr_c = const std::int64_t *;
 
-    using ui8_ptr_c = const std::uint8_t *;
+    using ui8_ptr_c = const uchar_int<> *;
     using ui16_ptr_c = const std::uint16_t *;
     using ui32_ptr_c = const std::uint32_t *;
     using ui64_ptr_c = const std::uint64_t *;
 
-    using i8_ptr_r = std::int8_t *&;
+    using i8_ptr_r = char_int<> *&;
     using i16_ptr_r = std::int16_t *&;
     using i32_ptr_r = std::int32_t *&;
     using i64_ptr_r = std::int64_t *&;
 
-    using ui8_ptr_r = std::uint8_t *&;
+    using ui8_ptr_r = uchar_int<> *&;
     using ui16_ptr_r = std::uint16_t *&;
     using ui32_ptr_r = std::uint32_t *&;
     using ui64_ptr_r = std::uint64_t *&;
 
-    using i8_ptr_r_c = const std::int8_t *&;
+    using i8_ptr_r_c = const char_int<> *&;
     using i16_ptr_r_c = const std::int16_t *&;
     using i32_ptr_r_c = const std::int32_t *&;
     using i64_ptr_r_c = const std::int64_t *&;
 
-    using ui8_ptr_r_c = const std::uint8_t *&;
+    using ui8_ptr_r_c = const uchar_int<> *&;
     using ui16_ptr_r_c = const std::uint16_t *&;
     using ui32_ptr_r_c = const std::uint32_t *&;
     using ui64_ptr_r_c = const std::uint64_t *&;

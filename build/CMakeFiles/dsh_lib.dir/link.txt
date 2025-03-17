@@ -1,2 +1,0 @@
-/usr/bin/ar qc libdsh_lib.a CMakeFiles/dsh_lib.dir/usr/src/user.cpp.o
-/usr/bin/ranlib libdsh_lib.a

@@ -1,1 +1,0 @@
-/usr/bin/g++ -g CMakeFiles/dsh.dir/main.cpp.o -o dsh  libdsh_lib.a 
