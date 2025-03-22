@@ -2,6 +2,7 @@
 
 #include "concepts.hpp"
 #include "types.hpp"
+#include "cpudef.hpp"
 
 #include <vector>
 #include <memory>
@@ -34,15 +35,16 @@ namespace dsh
     template<Pointer Ptr>
     struct generic_pointer : public _generic_pointer_base {
 
-        using traits            = pointer_traits<Ptr>; /** @typedef pointer_traits<Ptr> traits */
+        using traits            = pointer_traits<Ptr>; /** @typedef pointer_traits<Ptr> traits. Tags generic_pointer to have pointer_traits. */
         using pointer_type      = typename traits::pointer; /** @typedef typename traits::pointer pointer_type */
         using value_type        = typename traits::element_type; /** @typedef typename traits::element_type value_type */
-        using type              = generic_pointer; /** @typedef generic_pointer type */
+        using type              = generic_pointer; /** @typedef generic_pointer type. Registers tag generic_pointer with itself. */
 
         pointer_type ptr; /** @var pointer_type ptr */
         value_type value; /** @var value_type value */
 
         generic_pointer(pointer_type ptr, value_type value) : ptr{ptr}, value{value} {}; /** @fn constructor generic_pointer(pointer_type ptr, value_type value) */
+        ~generic_pointer() { free(); }
 
         constexpr value_type get() const noexcept { return value; } /** @fn generic_pointer::get() @returns value */
         constexpr pointer_type base() const noexcept { return ptr; } /** @fn generic_pointer::base() @returns ptr */

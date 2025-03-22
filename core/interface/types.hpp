@@ -18,6 +18,7 @@
     #include <windows.h>
 #endif
 
+#include "cpudef.hpp"
 #include "def.hpp"
 #include "struct_types.hpp"
 
@@ -26,7 +27,7 @@ namespace dsh {
     template<typename Float>
     struct _Select_Quad_Type { using type = long double; };
 
-    #ifdef __SIZEOF_FLOAT128__
+    #ifdef DSH_FLOAT128
     template <>
     struct _Select_Quad_Type<void> { using type = __float128; };
     #endif

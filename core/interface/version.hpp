@@ -1,5 +1,6 @@
 #pragma once
 #include "def.hpp"
+#include "osdef.hpp"
 #include "types.hpp"
 #include "concepts.hpp"
 
@@ -54,7 +55,7 @@ inline version get_version(string_ref str) {
 
     version result{0,0,0};
 
-#ifdef _WIN32
+#ifdef DSH_WIN
     sscanf_s
 #else
     sscanf

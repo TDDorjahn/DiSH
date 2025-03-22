@@ -20,14 +20,6 @@
     #define SHELL_ASSERT(expr) assert(expr)
 #endif
 
-#ifdef __SIZEOF_FLOAT128__
-    constexpr size_t float128_size = 16;
-#endif
-#ifndef __cpp_lib_containers_ranges
-    #define __dsh_lib_ranges
-    #define dsh_vector_ranges_wrapper
-#endif
-
 #define SHELL_VERSION_FORMAT_BRACED 0                               // Brace Format: {0,0,1}
 #define SHELL_VERSION_FORMAT_SQUARE 1                               // Square Format: [0,0,1]
 #define SHELL_VERSION_FORMAT_PARENTHESES 2                          // Parantheses Format: (0,0,1)

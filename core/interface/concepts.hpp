@@ -6,14 +6,23 @@
 #include <filesystem> //for path and shell path concepts
 #include <future> //for thread and future concepts
 #include <ranges> //ranges
+#include "osdef.hpp" //for architecture deduction
 
-#if defined(__linux__) || defined(__GNUC__) || defined(__APPLE__) || defined(Macintosh)
+#ifdef DSH_LINUX
     #include <unistd.h>
     #include <fcntl.h>
     #include <sys/types.h>
     #include <signal.h>
-#elif defined __WIN32__
+#elif defined(DSH_WIN)
     #include <windows.h>
+#endif
+
+#if defined(DSH_64)
+    constexpr int ARCH_BYTES = 8;
+#elif defined(DSH_32)
+    constexpr int ARCH_BYTES = 4;
+#else
+    constexpr int ARCH_BYTES = 2;
 #endif
 
 using std::string, std::string_view;
@@ -176,6 +185,29 @@ concept SameBase = Same<std::remove_cvref_t<First_Type>, std::remove_cvref_t<Sec
 
 template <typename First_Type, typename Second_Type>
 concept SimilarTo = Same<std::remove_cvref_t<First_Type>, Second_Type>;
+
+template <typename Base_Type>
+concept AddressLike = Unsigned<Base_Type> && requires(Base_Type v) {
+
+    { sizeof(v) == ARCH_BYTES };
+    { !(v > INT_MAX || v < INT_MIN) };
+
+};
+
+/**
+ * @brief Evalutes @c Base_Type for properties of an address.
+ * @details Determines whether Base_Type is an address-like object, checking for:
+ *                          i. Whether Base_Type is a pointer, reference, or integral*. (*further deduction needed)
+ *                              a. If Base_Type is integral (a primitive integer representing an address location), then it must be addressable and meet the
+ *                                  criterion of an address of ARCH_TYPE byte sized architecture.
+ *                          ii. If the sizeof(Base_Type) is the size of the architecture in bytes.
+ *          
+ * 
+ * @tparam Base_Type 
+ */
+template <typename Base_Type>
+concept Address = (Pointer<Base_Type> || Reference<Base_Type> || (AddressLike<Base_Type> && Integral<Base_Type>)) 
+                    && sizeof(Base_Type) == ARCH_BYTES;
 
 /**
  * @brief Evaluates @c Base_Type for @c array_v type trait.

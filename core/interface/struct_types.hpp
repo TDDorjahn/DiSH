@@ -222,6 +222,8 @@ template <typename _char_int = std::int8_t>
 struct char_int {
 
     _char_int value;
+    using value_type = std::int8_t;
+    using wrapped_type = int;
 
     char_int(_char_int value) : value(value) {}
 
@@ -259,7 +261,7 @@ struct char_int {
 
     friend ostream& operator<<(ostream& os, const char_int& v) { 
 
-        os << v.value;
+        os << +(v.value);
         return os;
 
     }
@@ -270,6 +272,8 @@ template<typename _uchar_int = std::uint8_t>
 struct uchar_int {
 
     _uchar_int value;
+    using value_type = std::uint8_t;
+    using wrapped_type = unsigned int;
 
     uchar_int(_uchar_int value) : value(value) {}
 
@@ -307,7 +311,7 @@ struct uchar_int {
 
     friend ostream& operator<<(ostream& os, const uchar_int& v) { 
 
-        os << v.value;
+        os << +(v.value);
         return os;
 
     }
